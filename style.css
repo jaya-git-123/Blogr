@@ -264,7 +264,7 @@ footer .footer-content ul li a{
   font-family:'overpass',sans-serif;
   font-weight: 400;
 }
-@media only screen and (max-width:499px){
+@media only screen and (max-width:450px){
   .nav-links{
     display: none;
   }
@@ -273,7 +273,7 @@ footer .footer-content ul li a{
   }
   .hamburger{
     visibility: visible;
-    margin-left: 290px;
+    margin-left: 200px;
   }
   .h1-h{
     font-size: 2rem;
@@ -303,14 +303,8 @@ footer .footer-content ul li a{
   height: 100vh;  
   padding: 0; 
   text-align: center;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
  }
- .service .ser-rtcolumn h2{
-  color: hsl(208, 49%, 24%);
-}
-.service .ser-rtcolumn p{
-  color: hsl(208, 49%, 24%);
-}
 .lap-section{
   flex-direction:column;
   padding: 0;
