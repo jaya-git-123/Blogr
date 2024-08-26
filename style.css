@@ -1,0 +1,332 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body,html{
+  overflow-x: hidden;
+}
+header{
+  background: url(./Images/bg-pattern-intro.svg);
+  background-position: center;
+  background-size: 150%;
+  max-width: 100%;
+  height: 80vh;
+  background-color:hsl(353, 100%,62%);
+  color: #fff;
+  border-bottom-left-radius: 6rem;
+  padding: 20px;
+  text-align: center;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  position: relative;
+  margin-right: 600px;
+  margin-top: 10px;
+  font-size: 17px;
+}
+.nav-links li:hover a img {
+  transform: rotate(180deg);
+}
+nav{
+  display: flex;
+}
+.nav-links li {
+  position: relative;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.login {
+  background-color: transparent;
+  color: #fff;
+  font-size: 17px;
+}
+.signup {
+  background-color: #fff;
+  color: #ff8a00;
+  font-size: 17px;
+  font-weight: bolder;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  color: #333;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  top: 100%;
+  left: 0;
+}
+.dropdown-menu li {
+  margin: 5px 0;
+}
+.dropdown-menu li a {
+  color: #333;
+  text-decoration: none;
+}
+.dropdown-menu li a:hover {
+  color: #ff8a00;
+}
+.hamburger{
+  visibility: hidden;
+}
+.hero {
+  margin: 60px 0;
+}
+.hero h1 {
+  font-size: 39px;
+  margin-bottom: 20px;
+}
+.hero p {
+  font-size: 20px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+.start-btn, .learn-more-btn {
+  background-color: #fff;
+  color: #ff8a00;
+  margin: 20px;
+  font-size: 17px;
+}
+.start-btn{
+  font-weight: bolder;
+}
+.learn-more-btn{
+  background-color:hsl(353, 100%,62%);
+  color: white;
+  border: 1px solid white;
+}
+.h1-h{
+  text-align: center;
+}
+.features{
+  width: 100%;
+  height: 100vh;
+  position:relative;
+  z-index: 2;
+  padding: 10rem 0 3rem 10rem;
+  margin-bottom: 475px;
+}
+.features .feature{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.h1-h{
+  font-size: 2.3rem;
+  color: hsl(208, 49%, 24%);
+}
+.features .feature .lt-para{
+  flex-basis: 50%;
+}
+.features .feature .lt-para h2{
+  font-weight: 700;
+  font-family: 'overpass', sans-serif;
+  margin-bottom: 2.5rem;
+  font-size: 1.8rem;
+  color: hsl(208, 49%, 24%);
+}
+.features .feature .lt-para p{
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  font-family: 'overpass', sans-serif;
+  font-weight: 300;
+  color: hsl(208, 49%, 24%);
+}
+.features .feature .rt-img2{
+  flex-basis: 50%;
+  position: relative;
+  width: 50%;
+}
+.service{
+  width: 100%;
+  height: calc(70vh);
+  background: hsl(231,17%,21%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top-right-radius: 6rem;
+  border-bottom-left-radius: 6rem;
+  padding: 8rem 10rem;
+}
+.service .ser-ltcolumn{
+  flex-basis: 40%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.service .ser-ltcolumn .phone{
+  left: -5rem;
+  top: -16rem;
+  z-index: 3; 
+}
+.service .ser-rtcolumn{
+  flex-basis: 50%;
+}
+.service .ser-rtcolumn h2{
+  font-size: 2rem;
+  color: hsl(0,0%,100%);
+  font-family: 'overpass',sans-serif;
+  font-weight: 600;
+}
+.service .ser-rtcolumn p{
+  font-size: 1rem;
+  color: hsl(0,0%,100%);
+  font-family: 'overpass',sans-serif;
+  font-weight: 300;
+  line-height: 1.8rem;
+}
+.lap-section{
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2;
+  padding: 15rem 10rem 15rem 0;
+}
+.lap-section .lap-ltcolumn{
+  flex-basis: 50%;
+  position: relative;
+}
+.ph-laptop{
+  visibility: hidden;
+}
+.lap-section .lap-ltcolumn .laptop{
+  width: 150%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -16rem;
+}
+.lap-section .lap-rtcolumn{
+  flex-basis: 40%;
+  position: relative;
+}
+.lap-section .lap-rtcolumn h2{
+  font-size: 1.8rem;
+  color: hsl(208, 49%, 24%);
+  margin-bottom: 1.5rem;
+  font-family: 'overpass',sans-serif;
+  font-weight: 700;
+}
+.lap-section .lap-rtcolumn p{
+  font-size: .95rem;
+  color: hsl(208, 49%, 24%);
+  margin-bottom: 3rem;
+  font-family: 'overpass',sans-serif;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+footer{
+  width: 100%;
+  padding: 4rem 10rem 6rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  border-top-right-radius: 6rem;
+  background: hsl(240, 10%, 16%);
+}
+footer .footer-content h3{
+  font-size: 1rem;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 2rem;
+  font-family:'overpass',sans-serif;
+  font-weight: 600;
+}
+footer .footer-content ul li{
+  list-style: none;
+  margin-bottom: 1rem;
+}
+footer .footer-content ul li a{
+  text-decoration: none;
+  color: hsl(240, 2%, 79%);
+  font-size: 1rem;
+  cursor: pointer;
+  font-family:'overpass',sans-serif;
+  font-weight: 400;
+}
+@media only screen and (max-width:499px){
+  .nav-links{
+    display: none;
+  }
+  .auth-buttons{
+    display: none;
+  }
+  .hamburger{
+    visibility: visible;
+    margin-left: 290px;
+  }
+  .h1-h{
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+  .features{
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom:300px;
+  }
+ .phone-align{
+  max-width:100%;
+ }
+  .features .feature{
+    flex-direction: column-reverse;
+    width: 100%;  
+  }
+  .lt-para{
+    text-align: center;
+  }
+ .service{
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;  
+  padding: 0; 
+  text-align: center;
+  margin-bottom: 200px;
+ }
+ .service .ser-rtcolumn h2{
+  color: hsl(208, 49%, 24%);
+}
+.service .ser-rtcolumn p{
+  color: hsl(208, 49%, 24%);
+}
+.lap-section{
+  flex-direction:column;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+.laptop{
+  visibility: hidden;
+}
+.ph-laptop{
+  visibility: visible;
+}
+footer{
+  flex-direction: column;
+}
+.logo-botm{
+  margin-bottom: 20px;
+}
+}
